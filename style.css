@@ -5,7 +5,7 @@ body{
 #back{
     z-index: -5;
     position: fixed;
-    background: url(/gifs/skills.gif);
+    background: url(gifs/skills.gif);
     width: 45vw;
     height: 95vh;
     left: 40%;
@@ -263,7 +263,7 @@ body{
 
 }
 .education img:hover{
-    content: url("/gifs/uni.gif");
+    content: url("gifs/uni.gif");
     cursor: none;
 }
 .hobbies{
@@ -288,15 +288,15 @@ height: 550px;
     width: 250px;
 }
 .hobbies .hobbieList #h1:hover{
-    content: url("/gifs/cricket.gif");
+    content: url("gifs/cricket.gif");
     cursor: none;
 }
 .hobbies .hobbieList #h2:hover{
-    content: url("/gifs/podcast.gif");
+    content: url("gifs/podcast.gif");
     cursor: none;
 }
 .hobbies .hobbieList #h3:hover{
-    content: url("/gifs/excersice.gif");
+    content: url("gifs/excersice.gif");
     cursor: none;
 }
 .achivements{
