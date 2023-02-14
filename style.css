@@ -1,0 +1,377 @@
+body{
+    color: white;
+    background-color: #0f5812;
+}
+#back{
+    z-index: -5;
+    position: fixed;
+    background: url(/gifs/skills.gif);
+    width: 45vw;
+    height: 95vh;
+    left: 40%;
+    top: 30%;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+.bug{
+    width: fit-content;
+    position: absolute;
+    z-index: 5;
+    top: 55px;
+    left: 15px;
+    cursor: pointer;
+}
+.bug span{
+    position: absolute;
+    left: 21px;
+    bottom: 103px;
+    color: chartreuse;
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: bold;
+    z-index: 10;
+}
+.bug #scrollBug{
+    width: 100px;
+    position: absolute;
+    animation-name: bugGif;
+    animation-duration: 28s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.6, -0.28, 0.74, 0.05);
+    display: none;
+   cursor: not-allowed;
+}
+.bug #stillBug{
+  
+    width: 100px;
+}
+#stillBug:hover{
+    animation-name: bugImg;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bugImg {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes bugGif{
+   0% {
+       
+        top: 0;
+    }
+    12.5%{
+        top: 80vh;
+    }
+    25%{
+        top: 160vh;
+    }
+    37.5%{
+        top: 245vh;
+    }
+    50%{
+        top: 325vh;
+    }
+    62.5%{
+        top: 410vh;
+    }
+    75%{
+        top: 490vh;
+    }
+    87.5%{
+        top: 575vh;
+    }
+    100%{
+        top: 640vh;
+    }
+}
+.navbar{
+    background: #ffab00;
+    position:sticky;
+    top: 0px;
+    z-index: 10;
+    opacity: 0.8;
+    box-shadow: 0px 1px 8px #fafafa;
+}
+.navbar h5{
+    margin: 0px 30px 0px 0px;
+}
+#goSkill{
+    animation-name: goSkill;
+}
+#goEducation{
+    animation-name: goEducation;
+}
+#goProject{
+    animation-name: goProject;
+}
+#goContact{
+    animation-name: goContact;
+}
+ @keyframes goSkill {
+    from{
+        top: 0px;
+    }
+    to{
+        top: 160vh;
+    }
+ }
+
+.start{
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+}
+.start .dp img{
+    width: 350px;
+}
+#skill{
+    text-align: center;
+    z-index: -2;
+    position: absolute;
+    font-size: 30vw;
+    color: yellowgreen;
+    opacity: 0.2;
+    top: 157vh;
+    width: 100%;
+}
+#education{
+    text-align: center;
+    z-index: -2;
+    position: absolute;
+    font-size: 18vw;
+    color: yellowgreen;
+    opacity: 0.2;
+    top: 268vh;
+    width: 100%;
+}
+#hobbie{
+    text-align: center;
+    z-index: -2;
+    position: absolute;
+    font-size: 24vw;
+    color: yellowgreen;
+    opacity: 0.2;
+    top: 341vh;
+    width: 100%;
+}
+#project{
+    text-align: center;
+    z-index: -2;
+    position: absolute;
+    font-size: 22vw;
+    color: yellowgreen;
+    opacity: 0.2;
+    top: 504vh;
+    width: 100%;
+}
+#contact{
+    text-align: end;
+    z-index: -2;
+    position: absolute;
+    font-size: 13vw;
+    color: yellowgreen;
+    opacity: 0.2;
+    top: 589vh;
+    right: 68px;
+    width: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.carousel-caption{
+    color: black;
+}
+.carousel-item{
+    height: 660px;
+}
+.profile{
+    /* margin: 50px 0px; */
+    height: 550px;
+}
+.profile h1{
+    width: fit-content;
+    margin: auto;
+    text-decoration: underline;
+    color: gold;
+}
+.profile p{
+    text-align: center;
+    margin: 20px 132px;
+    font-size: larger;
+    line-height: 1.7;
+    font-family: monospace;
+}
+.skills{
+    /* margin: 100px 67px; */
+    height: 550px;
+    width: 85%;
+}
+.skills h2{
+    padding-bottom: 25px;
+    width: fit-content;
+    margin: auto;
+    text-decoration: underline;
+
+}
+.skills #box1{
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skill span img{
+    height: 85px;
+    box-shadow: 1px 2px 1px gold;
+
+}
+/* .skills .progress{
+    display: none;
+    width: 70%;
+    margin: auto;
+} */
+.skills .progress{
+    display: inline-block;
+    cursor: pointer;
+    width: 99%;
+    margin: 15px auto;
+}
+.education{
+    height: 550px;
+}
+.education h6{
+    text-align: end;
+}
+.education img{
+    height: 240px;
+    margin-right: 50px;
+}
+.education div{
+    display: inline-block;
+    vertical-align: middle;
+    text-shadow: 6px 6px black;
+
+}
+.education img:hover{
+    content: url("/gifs/uni.gif");
+    cursor: none;
+}
+.hobbies{
+width: 100%;
+height: 550px;
+}
+.hobbies .hobbieList{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+ .hobbieName{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    color: gold;
+    text-shadow: 4px 3px black;
+}
+.hobbies .hobbieList img{
+    width: 250px;
+}
+.hobbies .hobbieList #h1:hover{
+    content: url("/gifs/cricket.gif");
+    cursor: none;
+}
+.hobbies .hobbieList #h2:hover{
+    content: url("/gifs/podcast.gif");
+    cursor: none;
+}
+.hobbies .hobbieList #h3:hover{
+    content: url("/gifs/excersice.gif");
+    cursor: none;
+}
+.achivements{
+/* margin: 50px 0px; */
+height: 550px;
+}
+.achivements h2{
+width: fit-content;
+margin: auto;
+text-decoration: underline;
+
+}
+.achivements div{
+    display: flex;
+    box-shadow: 10px 10px 15px black;
+
+}
+.achivements div img{
+    height: 222px;
+}
+.projects{
+/* margin: 100px 0px; */
+width: 100%;
+height: 550px;
+}
+.projects h2{
+width: fit-content;
+margin: auto;
+text-decoration: underline;
+
+}
+.projects .projectList{
+    display: flex;
+    justify-content: space-between;
+}
+.projects .projectList img{
+    height: 220px;
+}
+.projects .projectName{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    color: gold;
+    text-shadow: 4px 3px black;
+}
+.contact{
+    margin-bottom: 150px;
+    width: 78vw;
+}
+.contact h2{
+    width: fit-content;
+    text-decoration: underline;
+}
+.contact textarea{
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    display: block;
+    margin: 7px 0px;
+}
+.contact input{
+    border: 1px solid goldenrod;
+    display: block;
+    margin: 2px 0px 15px 0px;
+    padding: 4px;
+    border-radius: 5px;
+    width: 30%;
+}
+.contact button{
+    padding: 11px 29px;
+    border-radius: 28px;
+    border: 1px solid gold;
+    position: relative;
+    left: 27%;
+    font-family: cursive;
+    color: aliceblue;
+    background-color: darkgreen;
+}
+
